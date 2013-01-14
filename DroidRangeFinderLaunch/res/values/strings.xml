@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Droid RangeFinder</string>
+	<string name="input">Range Finder</string>
+	<string name="no_device">Please connect the RangeFinder accessory.</string>
+</resources>

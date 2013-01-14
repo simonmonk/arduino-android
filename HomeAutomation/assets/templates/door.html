@@ -1,0 +1,33 @@
+
+<h1>Door Lock</h1>
+
+<script>
+	function submitWithAction(action)
+	{
+		document.forms[0].action.value = action;
+		document.forms[0].submit();
+	}
+</script>
+
+<form action="door" method="GET"/>
+<input type="hidden" id="action" name="action" value="-"/>
+<table cellPadding="20">
+	<tr>
+		<td width="50%" class="bigTD">Password:</td>
+		<td width="50%" class="bigTD">
+			<input type="password" name="password" size="20" value=""/>
+			::PASSWORD_WRONG::
+		</td>
+	</tr>
+</table>
+
+<table cellPadding="20"> 
+	<tr>
+		<td width="50%" class="offButton" onClick="submitWithAction('0')">UNLOCK</td>
+	</tr>
+</table>
+
+<input class="button" type="button" value="Home" onClick="goto('home?')"/>
+</form>
+
+::STATUS::

@@ -1,0 +1,52 @@
+
+<h1>Bedtime</h1>
+
+
+<script language="Javascript">
+
+if (::FIRST_TIME::)
+{
+	var id = setInterval("settime()", 1000);
+}
+var m = 10;
+var s = 0;
+ 
+function settime () 
+{
+  var timeElement = document.getElementById("clock");
+  var time = "";
+  s = s - 1;
+  if (s < 0)
+  {
+    s = 59;
+    m = m - 1;
+  }
+  if (m < 0)
+  {
+  	clearInterval(id);
+  	goto('bedtime?action=off');
+  }
+  else
+  {
+  	timeElement.innerHTML = make2digit(m) + ":" + make2digit(s);
+  }
+}
+
+function make2digit(num)
+{
+  if (num > 9)
+  {
+  	return "" + num;
+  }
+  else
+  {
+    return "0" + num;
+  }
+}
+
+</script>
+
+<h1 class="clock"><div id="clock">::CLOCK_MESSAGE::</div></h1>
+
+
+<input class="button" type="button" value="BACK" onClick="goto('home?')"/>

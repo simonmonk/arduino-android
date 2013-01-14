@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Temp Logger</string>
+	<string name="input">Temperature Logger</string>
+	<string name="no_device">Please connect the TempLogger accessory.</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:weightSum="2">
+	<include layout="@layout/templightcontainer" android:id="@+id/TempLightContainer_ref"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:layout_weight="1" />	
+		
+
+	<CheckBox
+				android:id="@+id/laser" android:text="  LASER ON"
+				android:layout_margin="10px"
+				android:layout_width="wrap_content"
+        		android:layout_height="wrap_content">
+	</CheckBox>
+
+
+
+	<TextView android:text="Measurements" android:id="@+id/logLabel"
+			style="@style/DemoKitControlLabel" android:gravity="center"
+			android:lines="1"
+			android:layout_weight="1"></TextView>
+	<TextView android:text="" android:id="@+id/logField"
+			style="@style/DemoKitControlLabel" android:gravity="top"
+			android:lines="20" android:layout_height="400px"
+			android:layout_weight="1"></TextView>
+</LinearLayout>
+

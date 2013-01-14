@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Droid Light Display</string>
+	<string name="input">Light Display</string>
+	<string name="no_device">Please connect the Light Display accessory.</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/TempLightContainer" android:layout_width="fill_parent"
+	android:orientation="horizontal" android:layout_height="wrap_content"
+	android:paddingLeft="5dip">
+	<LinearLayout android:id="@+id/TempContainer"
+		android:layout_width="fill_parent" android:orientation="vertical"
+		android:layout_weight="1" android:layout_height="wrap_content">
+		<TextView android:id="@+id/tempLabel" android:text="Counts per Minute"
+			style="@style/DemoKitControlLabel" android:gravity="center"
+			android:layout_weight="1"></TextView>
+		<TextView android:text="0" android:id="@+id/tempValue"
+			style="@style/DemoKitMeasurement" android:layout_weight="1"></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/TempContainer"
+		android:layout_width="100px" android:orientation="vertical"
+		android:layout_weight="1" android:layout_height="wrap_content" android:layout_gravity="center">
+		<ImageView android:id="@+id/radImage" android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:src="@drawable/radiation" android:layout_weight="1"
+			></ImageView>
+	</LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Droid TV</string>
+	<string name="input">IR Remote</string>
+	<string name="no_device">Please connect the TV Remote accessory.</string>
+</resources>

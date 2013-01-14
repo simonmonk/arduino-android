@@ -1,0 +1,44 @@
+<html>
+
+<style type="text/css" media=screen>
+<!--
+   h1 {font-size: 40; text-align: center; margin-bottom: 0}
+   td { text-align: center; background-color:#60748e; color:#ffffff; }
+   select { text-align: center; }
+   .cellButton {font-size: 35px; text-align: center; background-color:#60748e; color:#ffffff;}
+   .cellButtonHome {font-size: 35px; text-align: center; background-color:#60748e; color:#ffffff;}
+   .bigTD {font-size: 25px; text-align: center; background-color:#60748e; color:#ffffff;}
+   .button {font-size: 20px; text-align: center; background-color:#336600; color:#ffffff;}
+   .onButton {font-size: 30px; text-align: center; background-color:#336600; color:#ffffff;}
+   .offButton {font-size: 30px; text-align: center; background-color:#990000; color:#ffffff;}
+   table {width:100%; border-spacing:10px 10px;}
+   .clock {font-size: 50px; text-align: center; background-color:#336600; color:#ffffff;}
+   
+-->
+</style>
+<script>
+	function goto(url)
+	{
+		window.location = url;
+	}
+	
+	function setSelected(selectionID, value)
+	{
+		var selectElement = document.getElementById(selectionID);
+		var n = selectElement.length;
+		for (i = 0; i < n; i++)
+		{
+			var option = selectElement[i];
+			if (option.value == value)
+			{
+				option.selected = true;
+				continue;
+			}
+		}
+	}
+	
+	
+</script>
+
+
+<body>

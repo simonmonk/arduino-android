@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">DroidGeiger</string>
+	<string name="input">Geiger Counter</string>
+	<string name="no_device">Please connect the DroidGeiger accessory.</string>
+</resources>
